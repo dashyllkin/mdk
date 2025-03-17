@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.index{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../img/фон.PNG);
+
+    /* убрать повторения */
+    background-repeat: no-repeat;
+    /* по центру */
+    background-position: center;
+    /* изображение растянуто во весь экран */
+    background-size: cover;
+    
+}
+/* для самого окна */
+.index section{
+    position: relative;
+    max-width: 400px;
+    
+    background-color: rgba(221, 221, 221, 0.2);
+    
+    border: 2px solid rgba(218, 218, 218, 0);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+h1{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+input:focus~label,
+input:valid ~label{
+    top: -5px;
+}
+.inputbox input{
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+    top: 20px;
+}
+.forget{
+    margin: 35px 0;
+    font-size: 0.85rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.forget label{
+    display: flex;
+    align-items: center;
+
+}
+.forget label input{
+    margin-right: 3px;
+}
+.forget a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.forget a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem ;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    color: white;
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+button:hover{
+    background-color: rgb(255, 255, 255, 0.5);
+}
+.register{
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* навигация */
+nav{
+    
+    height: 76px;
+    background-color: #EFEFEF;
+}
+/* Сброс стилей списка */
+nav ul { list-style-type: none;
+     margin: 0; 
+     padding: 0; 
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-top: 14px;
+    }
+
+/* Стилизация элементов списка */
+nav li { display: flex;
+     margin-right: 20px; 
+    }
+
+/* Стилизация ссылок */
+nav a { text-decoration: none; 
+    color: #333; 
+}
+nav img{
+    width: 64px;
+    height: 51px;
+    
+}
+nav p{
+    font-size: 30px;
+}
+nav a{
+    font-size: 30px;
+}
+
+.none{
+    height: 126px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+
+
+.osn{
+    background-color: #EFEFEF;
+    height: 654px;
+}
+.blok{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    position: relative;
+    top: 205px;
+    background-color: #fff;
+    width: 283px;
+    height: 244px;
+    border-radius: 20%;
+    color: black;
+    font-size: 30px;
+}
+.blok:hover{
+    background-color: #C2C2C2;
+}
+.bloki{
+    display: flex;
+    justify-content: space-around;
+}
+.bloki a{
+    text-decoration: none;
+}
+.blok img{
+    position: relative;
+    top: 90px;
+    left: 55px;
+}
